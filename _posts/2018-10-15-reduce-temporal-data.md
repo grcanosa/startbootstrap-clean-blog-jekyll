@@ -19,7 +19,7 @@ For example, image you have binary data that looks like this:
 
 You can generate sample data with this code:
 
-```python
+~~~ python
 #Create temporal index and random binary data
 data_len = 100
 max_num = 3
@@ -40,7 +40,7 @@ for c in range(0,n_cols):
     df["DATA"+str(c)] = data    
 df.head(10)
 plt.iplot([go.Scatter(x=df.DATE,y=df.DATA0,mode="lines+markers")])
-```
+~~~
 You can filter the points whose left and right points (temporal-wise) are exactly the same and still obtain the same plot shape. 
 
 {% raw %}

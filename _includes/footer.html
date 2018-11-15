@@ -37,6 +37,22 @@
             </a>
           </li>
           {% endif %}
+          {% if site.linkedin_username %}
+          <li class="list-inline-item">
+            <a href="https://linkedin/in/{{ site.linkedin_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          <a href="mailto:gonzalo@grcanosa.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="sr-only">Email me</span>
+          </a>
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
