@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source "http://rubygems.org"
 gemspec
 
 gem "jekyll", "~> 3.6.0"

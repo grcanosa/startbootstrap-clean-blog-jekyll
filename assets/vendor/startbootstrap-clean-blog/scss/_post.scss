@@ -13,10 +13,21 @@
       margin-bottom: 10px;
     }
     > .post-subtitle {
+
       font-weight: 300;
       margin: 0 0 10px;
     }
+    > .grc-post-image {
+      float: right;
+      height: 192px;
+      width: 192px;
+      filter: grayscale(90%);
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
   }
+  
   > .post-meta {
     font-size: 18px;
     font-style: italic;
