@@ -1,0 +1,12 @@
+- name: C++
+  categories:
+    - Programming Languages
+  level: 4
+  url: 
+  img: /static/img/technologies/c++.png
+- name: Python
+  categories:
+    - Programming Languages
+  level: 4
+  url: 
+  img: /static/img/technologies/python.png
