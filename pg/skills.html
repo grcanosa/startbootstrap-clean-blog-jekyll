@@ -1,13 +1,33 @@
 ---
 layout: page
 title: Technologies
-description: Skills
-#background: '/img/bg-about.jpg'
+description: Languages, frameworks, tools and more...
+background: '/static/img/skills-background.jpg'
+
 ---
 
-<div class="card-columns">
-    {% for skill in site.data.skills%}
-    <div class="card">
-    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
+<!-- <script type="text/javascript" src="/assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js"></script> 
+<script type="text/javascript" src="/assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js"></script> 
+
+
+
+<select multiple data-role="tagsinput">
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Washington">Washington</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Beijing">Beijing</option>
+        <option value="Cairo">Cairo</option>
+</select> -->
+      
+      
+<div class="row align-items-center">
+    {% for skill in site.data.technologies%}
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+        <a href="{{skill.url}}">
+    <img class="card-img-top" style="width:95%"
+            src="{{skill.img}}" alt="{{skill.name}}">
+        </a>
+    </div>
     {% endfor %}
+</div>
     
